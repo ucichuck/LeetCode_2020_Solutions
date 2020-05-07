@@ -11,8 +11,13 @@ public class MainClass {
 //
 //        System.out.println("res: " + so.calculate("1-1+1"));
 
-        Q207_SO so = new Q207_SO();
+//        Q207_SO so = new Q207_SO();
+//
+//        System.out.println("res: " + so.canFinish(2, new int[][] {{1,0}}));
 
-        System.out.println("res: " + so.canFinish(2, new int[][] {{1,0}}));
+        Q560 so = new Q560();
+        int res = so.subarraySum(new int[] {1,1,3,1,1}, 5);
+
+        System.out.println(res);
     }
 }
