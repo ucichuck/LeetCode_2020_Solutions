@@ -14,9 +14,14 @@ public class MainClass {
 //        Q207_SO so = new Q207_SO();
 //
 //        System.out.println("res: " + so.canFinish(2, new int[][] {{1,0}}));
+//
+//        Q560 so = new Q560();
+//        int res = so.subarraySum(new int[] {1,1,3,1,1}, 5);
 
-        Q560 so = new Q560();
-        int res = so.subarraySum(new int[] {1,1,3,1,1}, 5);
+        LeftMostColumnIndexOfOne so = new LeftMostColumnIndexOfOne();
+//        int res = so.getLeftMostColumnIndex(new int[][] {{0, 0, 0, 1}, {0, 0, 1, 1}, {0, 1, 1, 1}, {0, 0, 0, 1}});
+//        int res = so.getLeftMostColumnIndex(new int[][] {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}});
+        int res = so.getLeftMostColumnIndex(new int[][] {{1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}});
 
         System.out.println(res);
     }
