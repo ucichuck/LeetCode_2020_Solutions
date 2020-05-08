@@ -50,9 +50,16 @@ public class MainClass {
 //        print("it.hasNext()", it.hasNext()); // true
 //        print("it.next()", it.next()); // 20
 
-        CountSort countSort = new CountSort();
-        int[] nums = new int[] {10,20,21,30,15,19,16,22,22,20,21,19,30};
-        countSort.countSort(nums, 10, 30);
+//        CountSort countSort = new CountSort();
+//        int[] nums = new int[] {10,20,21,30,15,19,16,22,22,20,21,19,30};
+//        countSort.countSort(nums, 10, 30);
+//        for (int i : nums) {
+//            print("num", i);
+//        }
+
+        RadixSort radixSort = new RadixSort();
+        int[] nums = new int[] {10,20,21,30,15,19,16,22,22,20,21,19,30, 100, 101, 1, 5,80000};
+        radixSort.radixSort(nums);
         for (int i : nums) {
             print("num", i);
         }
