@@ -57,9 +57,15 @@ public class MainClass {
 //            print("num", i);
 //        }
 
-        RadixSort radixSort = new RadixSort();
+//        RadixSort radixSort = new RadixSort();
+//        int[] nums = new int[] {10,20,21,30,15,19,16,22,22,20,21,19,30, 100, 101, 1, 5,80000};
+//        radixSort.radixSort(nums);
+//        for (int i : nums) {
+//            print("num", i);
+//        }
+        QuickSort quickSort = new QuickSort();
         int[] nums = new int[] {10,20,21,30,15,19,16,22,22,20,21,19,30, 100, 101, 1, 5,80000};
-        radixSort.radixSort(nums);
+        quickSort.quickSort(nums);
         for (int i : nums) {
             print("num", i);
         }
