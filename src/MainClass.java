@@ -69,7 +69,13 @@ public class MainClass {
 //        for (int i : nums) {
 //            print("num", i);
 //        }
+
+        Q278 solution = new Q278();
+        solution.firstBad = 1;
+        int res = solution.firstBadVersion(3);
+        print("first bad", res);
     }
+
 
     private static void print(String des, Object res) {
         System.out.println(des + " : " + res);
