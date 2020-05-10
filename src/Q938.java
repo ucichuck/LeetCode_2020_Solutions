@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,7 +15,7 @@
  *     }
  * }
  */
-class Solution {
+class Q938 {
     public int rangeSumBST(TreeNode root, int L, int R) {
         int sum = 0;
         if (root == null) {

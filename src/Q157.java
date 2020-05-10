@@ -3,7 +3,7 @@
  *     int read4(char[] buf);
  */
 
-public class Solution extends Reader4 {
+public class Q157 extends Reader4 {
     /**
      * @param buf Destination buffer
      * @param n   Number of characters to read

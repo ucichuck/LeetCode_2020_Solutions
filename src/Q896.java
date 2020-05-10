@@ -1,4 +1,4 @@
-class Solution {
+class Q896 {
     public boolean isMonotonic(int[] A) {
         if (A.length <= 1) {
             return true;

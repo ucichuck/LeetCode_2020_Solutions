@@ -8,7 +8,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
+class Q328 {
     public ListNode oddEvenList(ListNode head) {
         if (head == null || head.next == null) {
             return head;

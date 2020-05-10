@@ -1,4 +1,6 @@
-class Solution {
+import java.util.Stack;
+
+class Q20 {
     public boolean isValid(String s) {
         Stack<Character> st = new Stack<>();
         for (char cur : s.toCharArray()) {

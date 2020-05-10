@@ -63,12 +63,12 @@ public class MainClass {
 //        for (int i : nums) {
 //            print("num", i);
 //        }
-        QuickSort quickSort = new QuickSort();
-        int[] nums = new int[] {10,20,21,30,15,19,16,22,22,20,21,19,30, 100, 101, 1, 5,80000};
-        quickSort.quickSort(nums);
-        for (int i : nums) {
-            print("num", i);
-        }
+//        QuickSort quickSort = new QuickSort();
+//        int[] nums = new int[] {10,20,21,30,15,19,16,22,22,20,21,19,30, 100, 101, 1, 5,80000};
+//        quickSort.quickSort(nums);
+//        for (int i : nums) {
+//            print("num", i);
+//        }
     }
 
     private static void print(String des, Object res) {

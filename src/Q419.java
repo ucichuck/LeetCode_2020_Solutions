@@ -1,4 +1,4 @@
-class Solution {
+class Q419 {
     public int countBattleships(char[][] board) {
         int res = 0;
         for (int i = 0; i < board.length; i++) {
