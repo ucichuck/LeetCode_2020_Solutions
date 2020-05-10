@@ -7,12 +7,12 @@ public class Q278 {
     }
 
     public int firstBad(int left, int right) {
-        System.out.println("check, left: " + left + ";  right: " + right);
         if (left == right) {
-            System.out.println("compare check, left: " + left + ";  right: " + right);
             return isBadVersion(left) ? left : -1;
         }
-        while (left < right) {
+        if (left > right) {
+            return -1;
+        }
             int mid = left + (right - left) / 2;
             if (!isBadVersion(mid)) {
                 return firstBad(mid+1, right);
@@ -24,9 +24,6 @@ public class Q278 {
                     return res;
                 }
             }
-        }
-
-        return -1;
     }
 
     private boolean isBadVersion(int index) {

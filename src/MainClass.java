@@ -71,9 +71,14 @@ public class MainClass {
 //        }
 
         Q278 solution = new Q278();
-        solution.firstBad = 1;
-        int res = solution.firstBadVersion(3);
+        solution.firstBad = 7;
+        int res = solution.firstBadVersion(7);
         print("first bad", res);
+
+//        Q278IsGood solution = new Q278IsGood();
+//        solution.firstBad = 0;
+//        int res = solution.firstBadVersion(7);
+//        print("first bad", res);
     }
 
 
