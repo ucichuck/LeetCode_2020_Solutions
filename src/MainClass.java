@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class MainClass {
     public static void main(String ...args) {
 //        Q904_Solution solutions = new Q904_Solution();
@@ -70,11 +72,16 @@ public class MainClass {
 //            print("num", i);
 //        }
 
-        Q278 solution = new Q278();
-        solution.firstBad = 7;
-        int res = solution.firstBadVersion(7);
-        print("first bad", res);
+//        Q278 solution = new Q278();
+//        solution.firstBad = 7;
+//        int res = solution.firstBadVersion(7);
+//        print("first bad", res);
 
+        IntersactionAmongThreeArrays so = new IntersactionAmongThreeArrays();
+        ArrayList<Integer> res = so.findIntersaction(new int[]{1, 5, 7, 2, 2, 8, 3, 3}, new int[]{2, 7, 2, 20, 9, 4, 5, 5}, new int[] {1, 2});
+        for (int key : res) {
+            print("resKey", key);
+        }
 //        Q278IsGood solution = new Q278IsGood();
 //        solution.firstBad = 0;
 //        int res = solution.firstBadVersion(7);
