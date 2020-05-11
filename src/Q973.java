@@ -1,8 +1,9 @@
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.Random;
 
 public class Q973 {
-    import java.util.Random;
+
 
     class Solution {
         public int[][] kClosest(int[][] points, int K) {
