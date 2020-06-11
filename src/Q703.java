@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.PriorityQueue;
 
 public class Q703 {
@@ -20,6 +21,7 @@ public class Q703 {
     }
 
     public int add(int val) {
+
         if (queue.size() < k) {
             queue.add(val);
         } else {
