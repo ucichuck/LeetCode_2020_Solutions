@@ -26,15 +26,21 @@ public class MainClass {
 ////        int res = so.getLeftMostColumnIndex(new int[][] {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}});
 //        int res = so.getLeftMostColumnIndex(new int[][] {{1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}});
 
-//        TreeNode head = new TreeNode(7);
-//        TreeNode node1 = new TreeNode(3);
-//        TreeNode node2 = new TreeNode(15);
-//        TreeNode node3 = new TreeNode(9);
-//        TreeNode node4 = new TreeNode(20);
+//        TreeNode head = new TreeNode(1);
+//        TreeNode node1 = new TreeNode(2);
+//        TreeNode node2 = new TreeNode(3);
+//        TreeNode node3 = new TreeNode(4);
+//        TreeNode node4 = new TreeNode(5);
 //        head.left = node1;
 //        head.right=node2;
 //        node2.left = node3;
 //        node2.right = node4;
+//
+//        Q297 so = new Q297();
+//        String res = so.serialize(head);
+//        print("res", res);
+//        so.deserialize(res);
+
 //
 //        TreeIterator it = new TreeIterator(head);
 //        print("it.hasNext()", it.hasNext()); // true
@@ -88,9 +94,34 @@ public class MainClass {
 //        int res = solution.firstBadVersion(7);
 //        print("first bad", res);
 
-        Q39 so = new Q39();
-        List<List<Integer>> res = so.combinationSum(new int[]{2, 3, 6, 7}, 7);
-        print("res size", res.size());
+//        Q39 so = new Q39();
+//        List<List<Integer>> res = so.combinationSum(new int[]{2, 3, 6, 7}, 7);
+//        print("res size", res.size());
+
+//        int a = 0;
+//        print("a: ", ++a);
+//        print("a: ", a++);
+//        print("a: ", a++);
+//        String s = "";
+//        s.equals()
+
+
+        int[] vector1 = new int[] {0, 1, 0, 0, 5, 0, 0 , 0 ,0 , 0, 9, -9, 1000, 0, 5, 0};
+        int[] vector2 = new int[] {0, 2};
+        int[] vector3 = new int[] {0, 6, 0, 2, 1, 0, 0 , 9, 0 , -1, 9, 9, 100, 0, 0,  0, -9};
+
+        DotProductOfSparseVector dotProduct = new DotProductOfSparseVector();
+        int res1 = dotProduct.dotProduct(vector1, vector2);
+        print("res", res1);  // 2
+        int res2 = dotProduct.dotProduct(vector1, vector3);
+        print("res", res2);  // 100011
+        int res3 = dotProduct.dotProduct(vector2, vector3);
+        print("res", res3); // 12
+        int res4 = dotProduct.dotProduct(vector2, vector1);
+        print("res", res4); // 2
+        int res5 = dotProduct.dotProduct(vector3, vector1);
+        print("res", res5); // 100011
+
     }
 
 

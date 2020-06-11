@@ -29,10 +29,36 @@ public class Q23_Solution {
             }
         }
 
-        int[][] slots1 = new int[2][2];
-        Arrays.sort(slots1, (o1, o2) -> o1[0] - o2[0]);
-
-
         return preHead.next;
     }
+
+//    public ListNode mergeKLists(ListNode[] lists) {
+//        ListNode res = new ListNode();
+//        PriorityQueue<ListNode> queue = new PriorityQueue<>(new Comparator<ListNode>() {
+//            @Override
+//            public int compare(ListNode o1, ListNode o2) {
+//                return o1.val - o2.val;
+//            }
+//        });
+//
+//        for (ListNode listNode : lists) {
+//            if (listNode!= null) {
+//                queue.add(listNode);
+//            }
+//
+//        }
+//
+//        ListNode head = res;
+//        while (!queue.isEmpty()) {
+//            ListNode tmp = queue.poll();
+//            head.next = tmp;
+//            head = tmp;
+//            tmp = tmp.next;
+//            if (tmp != null) {
+//                queue.add(tmp);
+//            }
+//        }
+//
+//        return res.next;
+//    }
 }

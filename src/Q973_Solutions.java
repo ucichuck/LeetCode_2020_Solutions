@@ -2,6 +2,7 @@ import com.oracle.tools.packager.Log;
 
 import java.awt.*;
 import java.util.Arrays;
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Q973_Solutions {
@@ -21,6 +22,7 @@ public class Q973_Solutions {
     private void kcl(int[][] points, int left, int right, int K) {
         int pivotIndex = ThreadLocalRandom.current().nextInt(left, right);
         int pivotDiff = getDiff(points[pivotIndex][0], points[pivotIndex][1]);
+
 
 //        System.out.println("pivotIndex: " + pivotIndex + "  pivotDiff: " + pivotDiff);
 
